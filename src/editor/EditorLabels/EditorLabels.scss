@@ -1,0 +1,53 @@
+:host{
+  user-select: none;
+  display: block;
+}
+
+.input{
+  border: 0 none;
+  outline: 0 none;
+  box-sizing: border-box;
+  max-width: 100%;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-size: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  margin-left: 0.3em;
+  padding: 0;
+}
+
+.tokens{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.complete-wrap{
+  position: relative;
+}
+.complete-block{
+  position: absolute;
+  white-space: nowrap;
+  max-height: 10em;
+  max-width: 20em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: white;
+  font-size: 0.8em;
+  top:0.3em;
+}
+.complete-item{
+  cursor: pointer;
+  padding: 0.4em;
+  &:hover{
+    background-color: #fef9f2;//#F5DEB3;
+    color: #0080ff;
+  }
+  &::before{
+    content: attr(data-text);
+  }
+  &.selected{
+    color: blue;
+  }
+}

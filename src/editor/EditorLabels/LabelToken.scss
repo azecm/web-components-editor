@@ -1,0 +1,55 @@
+:host {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0.2em;
+  margin: 0.1em;
+  border-radius: 0.7em;
+  white-space: nowrap;
+}
+
+:host(:hover){
+  box-shadow: 0 0 0.1em black;
+}
+
+:host(.simple) {
+  color: #999;
+  background-color: white;
+}
+
+:host(.normal) {
+  color: white;
+  background-color: #999;
+}
+
+:host(.linked) {
+  background-color: #42a24e;
+  color: white;
+}
+
+.text {
+  pointer-events: none;
+}
+
+.closer {
+  &::before {
+    content: "×";
+  }
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  width: 0.8em;
+  height: 0.8em;
+  text-align: center;
+  background-color: #eee;
+  color: #999;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 0.2em;
+
+  &:hover{
+    background-color: #ebffeb;
+    color: #0080ff;
+  }
+}

@@ -1,0 +1,35 @@
+:host{
+  display: flex;
+  align-items: center;
+}
+
+.first{
+  flex-grow: 1;
+}
+
+.second{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.element{
+  margin: 0 0.3em;
+}
+
+button{
+  color: white;
+  border: 0 none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  outline: 0 none;
+  &:hover{
+    box-shadow: 0 0 0.2em black;
+  }
+
+  background-color: #6c757d;
+
+  &.no-valid{
+    background-color: #dc3545;
+  }
+}

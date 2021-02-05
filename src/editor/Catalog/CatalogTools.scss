@@ -1,0 +1,36 @@
+:host{
+  display: block;
+  margin-left: 0.2em;
+  padding: 0.1em;
+  font-size: 1.5em;
+  background-color: #efefde;
+  border-radius: 0.3em;
+  box-shadow: 0 0 0.3em silver;
+  color: #777;
+  width: 4em;
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.1em;
+}
+
+.icon {
+  cursor: pointer;
+  display: block;
+  transition-property: color;
+  transition-duration: .2s;
+  svg {
+    width: 1em;
+    max-height: 1em;
+    pointer-events: none;
+  }
+}
+
+.icon, input-box{
+  &:hover{
+    color: #333;
+  }
+}

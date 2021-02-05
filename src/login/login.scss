@@ -1,0 +1,59 @@
+
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.field {
+  position: relative;
+  font-size: 1.3em;
+  margin: 0.3em;
+}
+
+.enter-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1.85em;
+  height: 1.85em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #888;
+
+  svg {
+    pointer-events: none;
+    width: 60%;
+  }
+}
+
+.message {
+  margin-top: 1em;
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 0 0 0.3em #555;
+  pointer-events: none;
+  user-select: none;
+}
+
+input {
+  padding: 0.3em;
+  border-radius: 0.2em;
+  border: 0 none;
+  width: 15em;
+  font-size: inherit;
+  box-sizing: border-box;
+
+  &.enter {
+    padding: 0.3em 2em 0.3em 0.3em;
+  }
+}

@@ -1,0 +1,50 @@
+
+.editor-main{
+  display: flex;
+  justify-content: center;
+}
+.editor-sidebar{
+  max-width: 300px;
+  min-width: 180px;
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+}
+.editor-catalog{
+  max-width: 1000px;
+  min-width: 920px;
+  flex-grow: 1;
+}
+.editor-layout{
+  max-width: 750px;
+  min-width: 500px;
+  flex-grow: 1;
+}
+
+// ============
+
+.input-field{
+  margin: 0.3rem 0;
+  clear: both;
+}
+.input-elem {
+  background-color: transparent;
+  border: 1px dashed currentcolor;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.textarea{
+  font-family: "Open Sans", sans-serif;
+  color: DodgerBlue;
+  font-size: 1.4rem;
+  overflow-y: hidden;
+  height: 1.8em;
+}
+.input{
+  font-family: "Open Sans", sans-serif;
+  color: DarkCyan;
+  font-size: 1.2rem;
+}

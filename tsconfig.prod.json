@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "paths": {
+      "api": ["./api/index.ts"],
+      "element": ["./elements/index.ts"],
+      "env": ["./api/env-prod.ts"]
+    }
+  }
+}

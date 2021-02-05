@@ -1,0 +1,51 @@
+.main {
+  display: flex;
+
+  &-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+
+    img{
+      max-height: 150px;
+      max-width: 150px;
+      height: auto;
+      width: auto;
+    }
+
+
+    &-progress {
+      position: absolute;
+      pointer-events: none;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: 0 0 0.5em black;
+      font-size: 2em;
+    }
+  }
+
+  &-param {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5em;
+  }
+}
+
+.groups {
+  max-width: 60vw;
+  max-height: 15em;
+  overflow-y: auto;
+  .icon {
+    margin: 0.2em;
+    user-select: all;
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+

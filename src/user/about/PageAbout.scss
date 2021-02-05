@@ -1,0 +1,13 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  background-color: rgba(243,243,243,.9);
+  align-items: center;
+}
+
+.save{
+  text-align: right;
+  padding-top: 1em;
+}

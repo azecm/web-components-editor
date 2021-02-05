@@ -1,0 +1,134 @@
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em 0.5em;
+  background-color: rgba(243, 243, 243, 0.9);
+  border-radius: 2em;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 0.4em 0.4em 0.4em 1em;
+  user-select: none;
+
+  input {
+    font-family: "Open Sans", sans-serif;
+    margin: 0 0.2em;
+    padding: 0.2em;
+    background-color: rgba(243, 243, 243, 0.6);
+    border-radius: 0.3em;
+    width: 20em;
+
+    &[readonly] {
+      color: gray;
+      border: 1px dashed silver;
+    }
+
+    &:not([readonly]) {
+      border: 1px solid #2278ab;
+    }
+  }
+
+  &:hover {
+    background-color: #f9f9f9;
+
+    input {
+      border-style: solid;
+    }
+  }
+}
+
+.icon {
+  svg {
+    height: 1.5em;
+  }
+}
+
+
+.folder-zero {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.5em;
+}
+
+.icon {
+  display: inline-flex;
+  color: #777;
+  cursor: pointer;
+  width: 1.5em;
+  margin-right: 0.5em;
+
+  &:hover {
+    color: #333;
+  }
+
+  svg {
+    height: 1.5em;
+    pointer-events: none;
+  }
+}
+
+.add, .path {
+  margin-left: 4em;
+}
+
+.path {
+  margin-top: 1em;
+
+  a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:nth-of-type(n+2) {
+      &::before {
+        display: inline-block;
+        content: '/';
+        margin: 0 0.5em;
+      }
+    }
+  }
+}
+
+.pages {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.page-num {
+  display: inline-block;
+  margin: 0 0.1em;
+  height: 1.3em;
+  min-width: 1.3em;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.selected {
+    background-color: #6c757d;
+    color: #eee;
+  }
+}
+
+.tools {
+  margin-left: 0.5em;
+}
+
+
+
+

@@ -1,0 +1,25 @@
+@keyframes bgOk {
+  50% {
+    background-color: lightcyan;
+  }
+}
+
+.body-bg-onsave {
+  animation-name: bgOk;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes bgError {
+  50% {
+    background-color: lightcoral;
+  }
+}
+
+.body-bg-onerror {
+  animation-name: bgError;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+}

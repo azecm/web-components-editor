@@ -1,0 +1,117 @@
+:host {
+  display: block;
+  background-color: transparent;
+  border: 1px dashed currentcolor;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  clear: both;
+  font-size: var(--editor-font-size);
+  color: var(--text-base-color);
+
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+a {
+  color: var(--link-base-color);
+}
+
+[contenteditable]{
+  outline: 0 none;
+}
+
+// ===============
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.left {
+  text-align: left !important;
+}
+
+.right {
+  text-align: right !important;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.justify {
+  text-align: justify !important;
+}
+
+.imgl {
+  float: left;
+  clear: left;
+  margin: 0.5em 1em 0.5em 0;
+}
+
+.imgr {
+  float: right;
+  clear: right;
+  margin: 0.5em 0 0.5em 1em;
+}
+
+.clear-both {
+  clear: both;
+}
+
+// ============
+
+p.command, p.like {
+  color: #4E86F7;
+  border-top: 1px dashed MediumBlue;
+  border-bottom: 1px dashed MediumBlue;
+
+  &:before {
+    padding-right: 0.5em;
+    color: #115D7D;
+    font-size: 0.8em;
+    display: inline-block;
+    font-weight: bold;
+  }
+}
+
+p.command:before {
+  content: 'command'
+}
+
+p.like:before {
+  content: 'like'
+}
+
+
+p.command[data-type]{
+  &:before{
+    content: "command-" attr(data-type);
+  }
+}
+
+// ============
+
+blockquote.col3r, blockquote.col3l, blockquote.col3 {
+  width: 30%;
+  margin: .5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border: 1px solid silver;
+  background-color: #fff;
+  font-size: .9em;
+}
+
+blockquote.col3, blockquote.col3l {
+  float: left;
+}
+
+blockquote.col3r {
+  float: right;
+}

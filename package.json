@@ -1,0 +1,23 @@
+{
+  "name": "web-components-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "./node_modules/.bin/rollup -c -w",
+    "build": "./node_modules/.bin/rollup -c --environment BUILD:production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.0",
+    "@rollup/pluginutils": "^3.0.9",
+    "node-sass": "^4.13.1",
+    "punycode": "^2.1.1",
+    "rollup": "^1.32.1",
+    "rollup-plugin-postcss": "^2.5.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  }
+}
